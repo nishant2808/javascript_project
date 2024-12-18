@@ -1,0 +1,331 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", serif;
+}
+header nav{
+    background-color: black;
+    color: #fff;
+    padding-inline: 15px;  
+}
+nav .container .row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container .row .col ul {
+    display: flex;
+    gap:50px;
+}
+.col ul li {
+    list-style-type: none;
+    font-size: 22px;
+    font-weight: 700;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.col ul li:hover{
+    color: #ddd;
+    transform: scale(1.2);
+}
+ul li a{
+    text-decoration: none;
+    color: #fff;
+}
+ form .inputSearch,.searchbtn{
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    outline: none;
+    border-radius: 1px;
+    padding: 5px 5px;
+}
+form .searchbtn{
+    background-color: #f2b10e;
+    cursor: pointer;
+    color: #fff;
+}
+form .searchbtn:hover{
+    background-color: #eebd42;
+   
+}
+.hero-img img{
+    width: 100%;
+    height: 650px;
+   
+}
+.content{
+    position: absolute;
+    top: 200px;
+    left: 100px;
+    width: 38%;
+}
+.content .author{
+    font-size: 45px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+.content .topic{
+    font-size: 35px;
+    font-weight: 600;
+    color: red;
+    margin-bottom: 20px;
+}
+.content .des{
+    font-size: 20px;
+    line-height: 30px;
+    margin-bottom: 20px;
+}
+.content .buttons button{
+    font-size: 18px;
+    font-weight: 600;
+    padding: 5px 8px;
+    cursor: pointer;
+    background-color: transparent;
+    transition: all 0.3s ease-in-out;
+}
+.content .buttons button:hover{
+    transform: scale(1.01);
+}
+.first-section{
+    padding: 80px 70px;
+}
+.first-section .first-section-container{
+    display: flex; 
+    width: 100%;
+}
+.first-section-container .column{
+    text-align: center;
+    padding: 40px;
+}
+.first-section-container .column h1{
+    font-size: 36px;
+    color: #103C61;
+    margin-bottom: 30px;
+}
+.first-section-container .column p{
+    margin-bottom: 30px;
+    line-height: 30px;
+}
+.first-section-container .column button, .secondsection-column button{
+    border: 1px solid #103C61;
+    color: #103C61;
+    padding: 10px 15px;
+    font-size: 18px;
+    background-color: transparent;
+    cursor: pointer;
+}
+.first-section-container .column button:hover, .secondsection-column button:hover{
+    background-color: #103C61;
+    color: #fff;
+}
+.secondsection{
+    /* background-color: #DBEAF3; */
+    background: radial-gradient(621px at 25.3% 13.8%, rgb(255, 255, 255) 0%, rgb(234, 236, 255) 90%);
+    width: 100%;
+    height: auto;
+    padding: 100px 0px;
+}
+.secondsection .secondsection-container{
+    text-align: center;
+    color: #fff;
+}
+.secondsection-container .secondsection-column{
+    margin: 0 auto;
+    width: 55%;
+}
+.secondsection-container .secondsection-column h1{
+    font-size: 36px;
+    color: #103C61;
+    margin-bottom: 20px;
+}
+.secondsection-container .secondsection-column p{
+    color: #000;
+    line-height: 2.0rem;
+    margin-bottom: 20px;
+}
+.thirdsection{
+    padding: 100px 70px;
+}
+.thirdsection-column h1{
+    text-align: center;
+    font-size: 36px;
+    color: #103C61;
+    margin-bottom: 50px;
+}
+.thirdsection-column .client-img{
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(180px,1fr));
+} 
+.client-img .img{
+    margin: 0 auto;
+    border: 1px solid #103C61;
+    padding: 20px 25px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+.client-img .img:hover{
+    transform: scale(1.2);
+}
+.thirdsection-column .client-img{
+    padding-top: 50px;
+}
+/* testimonial */
+.testimonial-slider {
+    background-color: #F7F7F7;
+    padding: 50px 20px;
+    text-align: center;
+    overflow: hidden;
+}
+.testimonial-slider .container {
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden; 
+}
+.testimonial-slider h1 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #103C61;
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    will-change: transform;
+}
+.slide {
+    flex: 0 0 100%; 
+    width: 100%;
+    padding: 20px;
+}
+.slide .quote {
+    font-size: 18px;
+    font-style: italic;
+    color: #000;
+}
+.slide .post{
+    font-size: 20px;
+    color: #103C61;
+    font-weight: bolder;
+    margin-top: 10px;
+
+}
+.slide .author {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #000;
+    font-weight: bold;
+}
+.navigation {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+.navigation i {
+    padding: 10px 15px;
+    color: #103C61;
+    font-size: 36px;
+    cursor: pointer;
+}
+.navigation i:hover{
+    color: #021627; 
+}
+/* contact form */
+.contact-section{
+    /* text-align: center; */
+    background: #103C60;
+    color: #fff;
+    padding: 100px;
+}
+.contact-section .heading-contact h1{
+    font-size: 36px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+form .form-group, .form-message{
+    font-size: 20px;
+}
+form .form-input, .form-textarea{
+    border: none;
+    outline: none;
+    background-color: #103C60;
+    border-bottom: 1px solid #fff;
+    
+}
+form .form-btn button{
+    width: 85%;
+    font-size: 18px;
+    font-weight: 900;
+    color: #103C60;
+    background-color: #fff;
+    padding: 10px 100px;
+    border: none;
+    margin-top: 25px;
+    margin-right: 100px;
+}
+form .form-btn button:hover{
+    background-color: #103C60;
+    color: #fff;
+    border: 1px solid #fff;
+}
+form .form-group{
+    /* display: flex;
+    justify-content: space-around; */
+    margin-bottom: 20px;
+}
+form .form-group #firstName ,#lastName, #emailInput, #subject{
+    width: 90%;
+}
+form #message{
+    width: 95%;
+}
+form .form-col{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+form .form-group{
+    width: 100%;
+    margin-bottom: 60px;
+
+}
+form{
+    margin-left: 100px;
+}
+form .form-col-btn{
+    display: flex;
+    justify-content: end;
+}
+
+
+/* footer */
+footer .footer-section{
+    background-color: #072136;
+    color: #F7F7F7;
+    padding: 80px 100px;
+}
+.footer-section .footer-container{
+    display: flex;
+    justify-content: space-between;
+}
+.footer-column ul li {
+    list-style-type: none;
+    line-height: 40px;
+}
+.footer-column h3{
+    font-size: 22px;
+    margin-bottom: 16px;
+}
+.footer-column i{
+    margin-bottom: 36px;
+}
+.social-icon .inner-social-icon{
+    display: flex;
+    gap: 15px;
+}
+

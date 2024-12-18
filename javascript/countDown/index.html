@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Count Down Timer By Nishant Thakur</title>
+</head>
+<body>
+
+    <div class="image">
+        <img class="bdayImg" src="birthday.jpg">
+    </div>
+    <div class="bdayBoi">
+        <img src="bdayBoy.jpg" class="bdayBoiImag">
+    </div>
+    <h1>My Birthday <br>
+        <!-- Count Down! -->
+        <span id="element"></span>
+    </h1>
+   
+    <div class="countdown">
+        <div class="timer">
+            <span class="time" id="days">10</span>
+            <span class="label">Days</span>
+        </div>
+        <div class="timer">
+            <span class="time" id="hours">12</span>
+            <span class="label">Hours</span>
+        </div>
+        <div class="timer">
+            <span class="time" id="mins">30</span>
+            <span class="label">Mins</span>
+        </div>
+        <div class="timer">
+            <span class="time" id="secs">10</span>
+            <span class="label">Secs</span>
+        </div>
+    </div>
+    <script type="text/Javascript" src="script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+        var typed = new Typed('#element', {
+          strings: ['Count Down!','Count Down!'],
+          typeSpeed: 50,
+        });
+      </script>
+</body>
+</html>
